@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:scube_app_task/core/constants/app_text_style.dart';
 import 'package:scube_app_task/core/routes/app_routes.dart';
 import 'package:scube_app_task/features/home/controller/home_controller.dart';
 import 'package:scube_app_task/features/home/widget/data_table_section/data_table_card.dart';
@@ -17,7 +18,10 @@ class HomeScreen extends GetView<HomeController> {
     return Scaffold(
       backgroundColor: const Color(0xFFEFF4FA),
       appBar: AppBar(
-        title: const Text('1st Page'),
+        title: const Text(
+          '1st Page',
+          style: AppTextStyles.h2,
+        ),
         leading: BackButton(
           onPressed: () => Get.toNamed(AppRoutes.splash),
         ),
