@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scube_app_task/core/assets/images/weather_icons.dart';
 import 'package:scube_app_task/features/second_page/model/data_item.dart';
 
 import 'data_tile.dart';
@@ -11,7 +12,7 @@ class DataList extends StatelessWidget {
     final List<DataItem> items = [
       const DataItem(
         indicatorColor: Colors.blue,
-        icon: 'assets/images/solar-cell_5575136 1.png',
+        icon: WeatherIcons.solarImg,
         title: 'Data View',
         status: 'Active',
         statusColor: Colors.blue,
@@ -20,7 +21,7 @@ class DataList extends StatelessWidget {
       ),
       const DataItem(
         indicatorColor: Colors.orange,
-        icon: 'assets/images/generator_8789846.png',
+        icon: WeatherIcons.assetImg,
         title: 'Data Type 2',
         status: 'Active',
         statusColor: Colors.blue,
@@ -29,7 +30,7 @@ class DataList extends StatelessWidget {
       ),
       const DataItem(
         indicatorColor: Colors.blue,
-        icon: 'assets/images/asset1.png',
+        icon: WeatherIcons.asset2Img,
         title: 'Data Type 3',
         status: 'Inactive',
         statusColor: Colors.red,
@@ -39,7 +40,7 @@ class DataList extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 320, // 👈 matches design height
+      height: 320,
       child: Scrollbar(
         thumbVisibility: true,
         thickness: 5,

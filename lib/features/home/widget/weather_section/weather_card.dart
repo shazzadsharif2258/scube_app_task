@@ -93,6 +93,7 @@ class WeatherCard extends StatelessWidget {
                                       TextOverflow.ellipsis,
                                   style: const TextStyle(
                                     color: Colors.white,
+                                    fontSize: 16,
                                     fontWeight:
                                         FontWeight.bold,
                                   ),
@@ -109,6 +110,9 @@ class WeatherCard extends StatelessWidget {
                                   '${data.irradiation} w/m²',
                                   style: const TextStyle(
                                     color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight:
+                                        FontWeight.bold,
                                   ),
                                 ),
                                 const Text(

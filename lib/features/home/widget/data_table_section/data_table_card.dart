@@ -13,7 +13,6 @@ class DataTableCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          /// HEADER
           Padding(
             padding: const EdgeInsets.fromLTRB(
               16,

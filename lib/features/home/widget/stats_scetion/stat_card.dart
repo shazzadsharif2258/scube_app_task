@@ -5,7 +5,7 @@ class StatCard extends StatelessWidget {
   final String icon;
   final String value;
   final String label;
-  final String? subLabel; // (Till Today)
+  final String? subLabel;
   final Color iconBg;
 
   const StatCard({
@@ -20,7 +20,7 @@ class StatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 78, // 👈 consistent height like design
+      height: 78,
       padding: const EdgeInsets.symmetric(
         horizontal: 12,
         vertical: 10,
@@ -31,7 +31,6 @@ class StatCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          /// ICON
           Container(
             width: 40,
             height: 40,
@@ -46,7 +45,6 @@ class StatCard extends StatelessWidget {
 
           const SizedBox(width: 10),
 
-          /// TEXT
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
